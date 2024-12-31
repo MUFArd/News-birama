@@ -52,6 +52,7 @@ nav ul li a {
 
     text-decoration: none;
     color: black;
+    z-index: 1;
 
 }
 
@@ -153,4 +154,23 @@ div {
     text-align: center;
 
     margin-top: 10vh;  
+    z-index: 1;
+}
+
+#home .image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+    z-index: 0;
+    transform: rotate(35deg);
+    top: -50vh;
+    left: 15vw;
+}
+
+#home .image span {
+    display: inline-block;
+    width: 120%;
+    height: 200vh;
+    background-color: aquamarine;
 }
