@@ -56,6 +56,7 @@ nav ul li a {
 }
 
 nav ul li a h1 {
+    font-size: 1.5vw;
     width: 2vw;
     height: 2vw;
     border-radius: 50%;
@@ -64,6 +65,7 @@ nav ul li a h1 {
 }
 
 nav ul li a h4 {
+    font-size: 1.2vw;
     margin-left: 1vw;
 }
 
@@ -103,21 +105,31 @@ nav ul li:nth-child(3) a {
 }
 
 nav ul li:nth-child(4) a {
-    background-image: url(./img/Furina.jpg);
+    background-color: rgb(70, 70, 255);
+    color: white;
+
+    background-image: url(./img/furina.png);
     background-position: top;
-    background-position-x: -4vw;
+    background-position-x: 0;
     background-position-y: -8vh;
     background-size: 28vw;
 
 }
 
 nav ul li:nth-child(5) a {
-    background-image: url(./img/hutao.webp);
+    background-color: orangered;
+    color: white;
+
+    background-image: url(./img/hutao.png);
     background-position: top;
-    background-position-x: -4vw;
+    background-position-x: -3vw;
     background-position-y: -5vh;
     background-size: 30vw;
 
+}
+nav ul li:nth-child(5) a h4 {
+    position: relative;
+    bottom: 2vh;
 }
 
 div {
