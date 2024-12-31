@@ -1,93 +1,144 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: pink;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.book {
-    width: 350px;
-    height: 500px;
-    position: relative;
-    transition: transform 0.5s;
-}
-
-.paper {
+nav {
     position: absolute;
-    width: 100%;
-    height: 100%;
-
-    perspective: 1500px;
-}
-
-.front,
-.back {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
+    bottom: 1vh;
     left: 0;
 
-    transform-origin: left;
-    transition: transform 0.5s ;
-    ;
+    width: 100vw;
+    height: 18vh;
 }
 
-.front {
-    z-index: 1;
-    backface-visibility: hidden;
-    border-left: 1px pink solid;
-}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
-.back {
-    z-index: 0;
-    border-left: 1px pink solid;
+    list-style: none;
 
-}
-
-.front-content,
-.back-content {
     width: 100%;
     height: 100%;
+}
+
+nav ul li {
+    background-color: aqua;
+
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 5px;
+
+    width: 15%;
+    height: 100%;
+    border-radius: 30px;
+}
+nav ul li a {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+    border: 2px black solid;
+
+    background-position: top;
+    background-size: 25vw;
+
+    text-decoration: none;
+    color: black;
+
 }
 
-.back-content {
-    transform: rotateY(180deg);
+nav ul li a h1 {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    text-align: center;
+    margin: 1vh;
 }
 
-.flipped .front,
-.flipped .back {
-    transform: rotateY(-180deg);
+nav ul li a h4 {
+    margin-left: 1vw;
 }
 
-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    margin: 10px;
+nav ul li:nth-child(1) a {
+    background-color: aquamarine;
+    background-image: url(./img/yukino-removebg.png);
+    background-position: top;
+    background-position-x: -30px;
+    background-position-y: -3vh;
+    background-size: 30vw;
+
 }
 
+nav ul li:nth-child(2) a {
+    background-color: rgb(248, 0, 0);
+    color: white;
 
-#p1 {
-    z-index: 4;
+    background-image: url(./img/kaguya.png);
+    background-position: top;
+    background-position-x: 1vw;
+    background-position-y: -1vh;
+    background-size: 18vw;
+    background-repeat: no-repeat;
+
 }
-#p2 {
-    z-index: 3;
+
+nav ul li:nth-child(3) a {
+    background-color: gray;
+    color: white;
+    
+    background-image: url(./img/Mai\ Sakurajimapng.png);
+    background-position: center;
+    background-position-x: 6vw;
+    background-position-y: -0vh;
+    background-size: 25vw;
+    background-repeat: no-repeat;
 }
-#p3 {
-    z-index: 2;
+
+nav ul li:nth-child(4) a {
+    background-image: url(./img/Furina.jpg);
+    background-position: top;
+    background-position-x: -4vw;
+    background-position-y: -8vh;
+    background-size: 28vw;
+
 }
-#p4 {
-    z-index: 1;
+
+nav ul li:nth-child(5) a {
+    background-image: url(./img/hutao.webp);
+    background-position: top;
+    background-position-x: -4vw;
+    background-position-y: -5vh;
+    background-size: 30vw;
+
+}
+
+div {
+    width: 100vw;
+    height: 100vh;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home .text {
+    width: 80vw;
+    height: 15vh;
+
+    display: grid;
+    row-gap: 2vh;
+
+    text-align: center;
+
+    margin-top: 10vh;  
 }
