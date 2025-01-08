@@ -1,176 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #28d8ff;
+    color: red;
 }
 
 nav {
-    position: absolute;
-    bottom: 1vh;
-    left: 0;
-
-    width: 100vw;
-    height: 18vh;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    list-style: none;
-
-    width: 100%;
-    height: 100%;
-}
-
-nav ul li {
-    background-color: aqua;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 15%;
-    height: 100%;
-    border-radius: 30px;
-}
-nav ul li a {
-    width: 100%;
-    height: 100%;
-
-    border-radius: 20px;
-    border: 2px black solid;
-
-    background-position: top;
-    background-size: 25vw;
-
-    text-decoration: none;
-    color: black;
-    z-index: 1;
-
-}
-
-nav ul li a h1 {
-    font-size: 1.5vw;
-    width: 2vw;
-    height: 2vw;
-    border-radius: 50%;
-    text-align: center;
-    margin: 1vh;
-}
-
-nav ul li a h4 {
-    font-size: 1.2vw;
-    margin-left: 1vw;
-}
-
-nav ul li:nth-child(1) a {
-    background-color: aquamarine;
-    background-image: url(./img/yukino-removebg.png);
-    background-position: top;
-    background-position-x: -30px;
-    background-position-y: -3vh;
-    background-size: 30vw;
-
-}
-
-nav ul li:nth-child(2) a {
-    background-color: rgb(248, 0, 0);
-    color: white;
-
-    background-image: url(./img/kaguya.png);
-    background-position: top;
-    background-position-x: 1vw;
-    background-position-y: -1vh;
-    background-size: 18vw;
-    background-repeat: no-repeat;
-
-}
-
-nav ul li:nth-child(3) a {
-    background-color: gray;
-    color: white;
-    
-    background-image: url(./img/Mai\ Sakurajimapng.png);
-    background-position: center;
-    background-position-x: 6vw;
-    background-position-y: -0vh;
-    background-size: 25vw;
-    background-repeat: no-repeat;
-}
-
-nav ul li:nth-child(4) a {
-    background-color: rgb(70, 70, 255);
-    color: white;
-
-    background-image: url(./img/furina.png);
-    background-position: top;
-    background-position-x: 0;
-    background-position-y: -8vh;
-    background-size: 28vw;
-
-}
-
-nav ul li:nth-child(5) a {
-    background-color: orangered;
-    color: white;
-
-    background-image: url(./img/hutao.png);
-    background-position: top;
-    background-position-x: -3vw;
-    background-position-y: -5vh;
-    background-size: 30vw;
-
-}
-nav ul li:nth-child(5) a h4 {
-    position: relative;
-    bottom: 2vh;
-}
-
-div {
-    width: 100vw;
-    height: 100vh;
-}
-
-#home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#home .text {
-    width: 80vw;
-    height: 15vh;
-
-    display: grid;
-    row-gap: 2vh;
-
-    text-align: center;
-
-    margin-top: 10vh;  
-    z-index: 1;
-}
-
-#home .image {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    gap: 0.5vw;
-    z-index: 0;
-    transform: rotate(35deg);
-    top: -50vh;
-    left: 15vw;
-}
-
-#home .image span {
-    display: inline-block;
-    width: 120%;
-    height: 200vh;
-    background-color: aquamarine;
+    white
 }
