@@ -6,19 +6,258 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header {
+    display: grid;
+    grid-template-areas: "logo nav"
+                         "tag   tag"
+    ;
+
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 2fr 1fr;
     width: 100vw;
-    height: 8vh;
+    height: 13vh;
+    
+    justify-content: center;
+
+    background-color: #ff2828;
+    color: white;
+
+    position: fixed;
+    top: 0;
+
+}
+
+.logo {
+    grid-area: logo;
+    margin-left: 3vw;
 
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
 
-    background-color: #28d8ff;
-    color: red;
+.logo h1 {
+    font-size: 2rem;
 }
 
 nav {
-    white
+    grid-area: nav;
+    display: flex;
+    gap: 1vw;
+}
+
+
+
+nav>ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    
+    gap: 1vw;
+}
+
+nav ul>li {
+    padding: 0 1vw;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+
+    gap: 0.5vw;
+}
+
+
+nav ul li a {
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    color: white;
+
+    position: relative;
+
+}
+
+nav ul li:hover {
+    background-color: red;
+}
+
+nav ul li .sub-links {
+    
+    width: 120%;
+    height: 20vh;
+
+    position: absolute;
+    left: 0;
+    top: 6vh;
+
+    background-color: red;
+
+    display: none;
+    flex-direction: column;
+    row-gap:1vh ;
+
+}
+
+.sub-links li {
+    width: auto;
+    height: 7vh;
+}
+
+nav ul li a:hover ~ .sub-links {
+    display: flex;
+}
+
+nav ul li a ~ .sub-links:hover {
+    display: flex;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+.search i {
+    font-size: 1.3rem;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+}
+
+.profil i {
+    font-size: 1.3rem;
+}
+
+.tanggal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 4vw;
+}
+
+.tanggal h2 {
+    font-size: 1rem;
+}
+
+.tag-links {
+    grid-area: tag;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: black;
+}
+
+.tag-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 3vw;
+}
+
+.tag-links ul li a {
+    font-weight: 500;
+
+    text-decoration: none;
+
+    color: white;  
+    
+    transition: all 0.2s ease-in-out;
+}
+
+.tag-links ul li a:hover {
+    color: gray;
+}
+
+.container {
+    width: 80vw;
+    display: flex;
+    gap: 2vw;
+
+    margin-top: 10vh;
+
+}
+
+main {
+    flex: 4;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: gainsboro;
+}
+
+aside {
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Top-News {
+    width: 80%;
+    height: 50vh;
+
+    margin-top: 5vh;
+}
+
+.Top-News .judul {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.Top-News h1 {
+    font-size: 1.4rem;
+}
+
+.Top-News span {
+    display: inline-block;
+    width: 0.3vw;
+    height: 70%;
+
+    background-color: red;
+}
+
+.Top-News h2 {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.Top-News img {
+    width: 100%;
+    height: 42vh;
+
+    background-color: gray;
+
 }

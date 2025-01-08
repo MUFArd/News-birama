@@ -11,14 +11,14 @@
 <body>
     <header>
         <div class="logo">
-            <h1>News-Birama</h1>
+            <h1>Artikel Sekolah</h1>
         </div>
         <nav>
             <ul class="main-links">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="">Tentang Kami</a></li>
                 <li>
-                    <a href="">Kegiatan Sekolah</a>
+                    <a href="#">Kegiatan Sekolah</a>
                     <i class="fa-solid fa-chevron-down"></i>
                     <ul class="sub-links">
                         <li><a href="">Tadarus Pagi</a></li>
@@ -61,12 +61,31 @@
         </div>
     </header>
 
+<div class="container">
     <main>
         <div class="Top-News">
-            <h1>Heading 1</h1>
+            <div class="judul">
+                <h1>Berita Terkini</h1>
+                <span></span>
+                <span></span>
+                <h2>Pendaftaran Siswa Baru (PPDB) Telah Di Buka</h2>
+            </div>
             <img src="" alt="" srcset="">
-    </div>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut ad dolorum, voluptatem qui minima provident amet in, distinctio deserunt cupiditate illo voluptatibus sint omnis quos eius nam ipsa temporibus?</p>
+            </article>
+        </div>
     </main>
+    <aside>
+        <div class="berita-Lainnya">
+            <h2>Berita Lainnya</h2>
+            <div class="berita">
+                <img src="" alt="" srcset="">
+                <a href="#"><p></p></a>
+            </div>
+        </div>
+    </aside>
+</div>
 </body>
 <script src="script.js"></script>
 </html> 
