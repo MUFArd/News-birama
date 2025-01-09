@@ -142,6 +142,8 @@ nav ul li .sub-links {
     width: 100%;
     height: 100%;
 
+    font-size: 1vw;
+
     display: flex;
     justify-content: center;
 }
@@ -182,6 +184,10 @@ nav ul li a ~ .sub-links:hover li a:hover {
     display: flex;
     align-items: center;
     margin-left: 1vw;
+}
+
+.search input {
+    display: none;
 }
 
 .search i {
@@ -567,10 +573,19 @@ footer .hakcipta p span {
 
 @media screen and (max-width : 780px) {
     Header {
-        height: 10vh;
+        height: 8vh;
 
-        grid-template-columns: 1fr 1fr;
+
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        z-index: 999;
+
+    }
+
+    header .logo {
+        z-index: 2;
+        background-color: #ff3232;
     }
 
     header .logo h1 {
@@ -578,7 +593,7 @@ footer .hakcipta p span {
     }
 
     header label {
-        grid-area: nav;
+        margin-right: 5vw;
 
         display: flex;
         justify-content: center;
@@ -588,20 +603,156 @@ footer .hakcipta p span {
         font-size: 8vw;
     }
 
+
     nav {
         position: absolute;
-        top: 10vh;
+        top: 7.5vh;
         left: 0;
 
-        width: 50vw;
-        height: 80vh;
+        width: 80vw;
+        height: 92vh;
+
+        transform: translateX(-50vw);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
 
 
         flex-direction: column;
-        background-color: #ff2828;
+        background-color: rgb(54, 54, 54);
+        z-index: 1;
     }
 
+    #nav:checked ~ nav {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+
     nav ul {
+        width: 100%;
+        height: 280vh;
         flex-direction: column;
+        z-index: 1;
+    }
+
+    nav ul li {
+        width: 100%;
+        min-height: 4vh;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        margin: 0;
+        padding: 0;
+
+        z-index: 1;
+
+    }
+
+    nav ul li a {
+        font-size: 3vw;
+        text-indent: 1vw;
+
+        display: flex;
+        justify-content: start;
+        align-items: start;
+
+        background-color: rgb(54, 54, 54);
+
+    }
+
+    nav ul li i::after {
+        display: none;
+    }
+
+    nav ul li .sub-links {
+    
+        width: 100%;
+        height: 0;
+    
+        position: relative;
+        top: 0;
+        left: 0;
+    
+        display: block ;
+        flex-direction: column;
+    
+        list-style: none;
+    
+        padding:0;
+        margin: 0;
+        
+        background-color: rgb(54, 54, 54);
+
+        visibility: hidden;
+
+    
+    }
+    
+    .sub-links li {
+        width: 100%;
+        height: 4vh;
+    
+        padding: 0;
+
+    }
+    
+    .sub-links li a {
+        width: 100%;
+        height: 100%;
+    
+        font-size: 2.5vw;
+        text-indent: 4vw;
+    
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    nav ul li:hover {
+        background: none;
+    }
+
+    nav ul li a.show ~ .sub-links {
+        height: auto;
+        visibility: visible;
+    }
+    nav .search {
+        height: 5vh;
+
+        gap: 2vw;
+        justify-content: center;
+
+        margin-bottom: 2vh;
+        z-index: 1;
+
+    }
+
+    nav .search i{
+        display: none;
+    }
+
+    nav .search input {
+        width: 90%;
+        height: 100%;
+        padding-left:2vw ;
+
+        font-size: 3vw;
+
+
+        border-radius: 30px;
+    }
+
+    nav .tanggal {
+        display: none;
+    }
+
+    .tag-links {
+       display: none;
     }
 }

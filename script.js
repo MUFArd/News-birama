@@ -20,4 +20,17 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
-    
+const links = document.querySelector('.main-links');
+const sublinks = links.querySelectorAll('a');
+
+sublinks.forEach(sub => {
+    sub.addEventListener('click', function (event) {
+
+        if (this.classList.contains('show')) {
+            this.classList.remove('show');
+        }else {
+            this.classList.add('show');
+        }
+    });
+})
+

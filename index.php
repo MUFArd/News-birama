@@ -13,19 +13,18 @@
         <div class="logo">
             <h1>Artikel Sekolah</h1>
         </div>
-        <label for=""><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul class="main-links">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="">Tentang Kami</a></li>
                 <li>
                     <a href="#">Kegiatan Sekolah</a>
+                    <i class="fa-solid fa-chevron-down"></i>
                     <ul class="sub-links">
                         <li><a href="">Tadarus Pagi</a></li>
                         <li><a href="">Literasi</a></li>
                         <li><a href="">Sholat dhuha bersama</a></li>
                     </ul>
-                    <i class="fa-solid fa-chevron-down"></i>
                 </li>
                 <li><a href="">Profil Sekolah</a></li>
                 <li><a href="">Staf & Tata Usaha</a></li>
@@ -33,6 +32,10 @@
             <div class="search">
                 <i class="fa-solid fa-search"></i>
             </div>
+            <div class="profil">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
             <div class="tanggal">
                 <h2 id="jam"></h2>
                 <p id="tanggal"></p>
@@ -62,68 +65,15 @@
     <main>
         <div class="Top-News">
             <div class="judul">
-                <h1>Info Terkini</h1>
+                <h1>Berita Terkini</h1>
                 <span></span>
                 <span></span>
-                <h2>Penerimaan Peserta Didik Baru (PPDB) Telah Di Buka </h2>
+                <h2>Pendaftaran Siswa Baru (PPDB) Telah Di Buka</h2>
             </div>
             <img src="" alt="" srcset="">
             <article>
-                <h2>PPDB Telah Dibuka</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut ad dolorum, voluptatem qui minima provident amet in, distinctio deserunt cupiditate illo voluptatibus sint omnis quos eius nam ipsa temporibus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde ipsam dolore voluptate cupiditate libero quia eius autem. Repellendus maxime perspiciatis optio reiciendis iusto molestiae suscipit saepe veniam dolore ea.
-                    <a href="#">Selengkapnya ></a>
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut ad dolorum, voluptatem qui minima provident amet in, distinctio deserunt cupiditate illo voluptatibus sint omnis quos eius nam ipsa temporibus?</p>
             </article>
-            
-        </div>
-        <div class="Past-News">
-            <div class="judul">
-                <h1>Info Sebelumnya</h1>
-            </div>
-            <div class="News-wrap">
-                <div class="berita">
-                    <img src="" alt="">
-                    <article>
-                        <h2>Subjudul</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, voluptatibus! Aut debitis odio, facilis distinctio nihil id adipisci laboriosam perspiciatis dolores.</p>
-                        <a href="">Selengkapnya ></a>
-                    </article>
-                </div>
-                <div class="berita">
-                    <img src="" alt="">
-                    <article>
-                        <h2>Subjudul</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, voluptatibus! Aut debitis odio, facilis distinctio nihil id adipisci laboriosam perspiciatis dolores.</p>
-                        <a href="">Selengkapnya ></a>
-                    </article>
-                </div>
-                <div class="berita">
-                    <img src="" alt="">
-                    <article>
-                        <h2>Subjudul</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, voluptatibus! Aut debitis odio, facilis distinctio nihil id adipisci laboriosam perspiciatis dolores.</p>
-                        <a href="">Selengkapnya ></a>
-                    </article>
-                </div>
-                <div class="berita">
-                    <img src="" alt="">
-                    <article>
-                        <h2>Subjudul</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, voluptatibus! Aut debitis odio, facilis distinctio nihil id adipisci laboriosam perspiciatis dolores.</p>
-                        <a href="">Selengkapnya ></a>
-                    </article>
-                </div>
-                <div class="berita">
-                    <img src="" alt="">
-                    <article>
-                        <h2>Subjudul</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, voluptatibus! Aut debitis odio, facilis distinctio nihil id adipisci laboriosam perspiciatis dolores.</p>
-                        <a href="">Selengkapnya ></a>
-                    </article>
-                </div>
-            </div>
         </div>
     </main>
     <aside>
@@ -131,153 +81,11 @@
             <h2>Berita Lainnya</h2>
             <div class="berita">
                 <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Pemenang Esport Classmeet Tahun Ini</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2></h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="berita-Lainnya">
-            <h2>Berita Organisasi</h2>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Pemenang Esport Classmeet Tahun Ini</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Pemenang Esport Classmeet Tahun Ini</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Pemenang Esport Classmeet Tahun Ini</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Pemenang Esport Classmeet Tahun Ini</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2></h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
-            </div>
-        </div>
-        <div class="berita-Lainnya">
-            <h2>Berita Olahraga</h2>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Pemenang Esport Classmeet Tahun Ini</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2></h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
-            </div>
-            <div class="berita">
-                <img src="" alt="" srcset="">
-                <div class="subjudul">
-                    <a href=""><h2>Mewing Mewing Mewing</h2></a>
-                </div>
+                <a href="#"><p></p></a>
             </div>
         </div>
     </aside>
 </div>
-<footer>
-    <div class="Tentang-Kami">
-        <div class="teks">
-            <h3>Jawa</h3>
-        </div>
-        <div class="Media-Sosial">
-            <h3>Ikuti Kami</h3>
-            <div class="links">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
-        <div class="Kontak">
-            <h3>Hubungi Kami</h3>
-            <p>Orang 1 : <a href="">+62123456789</a></p>
-            <p>Orang 2 : <a href="">+62123456789</a></p>
-            <p>Orang 3 : <a href="">+62123456789</a></p>
-        </div>
-    </div>
-    <hr>
-    <div class="hakcipta">
-        <p>
-        <span> Hak Cipta © <?php echo date("Y"); ?> Nama Perusahaan </span>.  
-        Seluruh isi, desain, teks, grafik, dan elemen lain dalam situs ini dilindungi undang-undang hak cipta dan perjanjian internasional.  
-        Dilarang keras menyalin, menyimpan, atau mendistribusikan sebagian atau seluruh konten tanpa izin tertulis dari Nama Perusahaan.  
-        Semua hak dilindungi sepenuhnya oleh hukum yang berlaku.
-        </p>
-    </div>
-</footer>
 </body>
 <script src="script.js"></script>
 </html> 
