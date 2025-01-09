@@ -245,17 +245,18 @@ nav ul li a ~ .sub-links:hover li a:hover {
 }
 
 .container {
-    width: 100vw;
+    width: 70vw;
+    height: auto;
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
 
     margin-top: 13vh;
 
 }
 
 main {
-    flex: 2;
-    height: 100vh;
+    flex: 2.5;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -265,8 +266,8 @@ main {
 
 
 .Top-News {
-    width: 80%;
-    height: 50vh;
+    width: 90%;
+    height: auto;
 
     margin-top: 5vh;
 }
@@ -275,17 +276,19 @@ main {
     width: 100%;
     height: 8vh;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 1vw;
 }
 
 .Top-News h1 {
-    font-size: 1.4vw;
+    font-size: 2vw;
+    line-height: 1;
 }
 
 .Top-News span {
     display: inline-block;
-    width: 0.4vw;
+    width: 0.3vw;
     height: 70%;
 
     background-color: red;
@@ -298,22 +301,108 @@ main {
 
 .Top-News img {
     width: 100%;
-    height: 42vh;
+    height: 50vh;
+
+    margin-top: 2vh;
 
     background-color: gray;
 
 }
+
+.Top-News article {
+    margin-top: 2vh;
+}
+
+.Top-News article h2 {
+    font-size: 1.4vw;
+}
+
+
+
+
 .Top-News article p{
     font-size: 1vw;
     text-align: justify;
+    text-indent: 2vw;
+
+    margin-top: 2vh;
+}
+
+.Past-News {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+
+    row-gap: 2vh;
+}
+
+.Past-News h1 {
+    font-size: 2vw;
+
+    cursor:default;
+}
+
+.Past-News h1:hover {
+    text-decoration: underline;
+}
+
+.Past-News .News-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+
+    margin-top: 2vh;
+}
+
+.Past-News .News-wrap .berita {
+    display: flex;
+    gap: 2vw;
+
+    width: 100%;
+    height: 17vh;
+}
+
+.Past-News .News-wrap .berita img {
+    flex: 1;
+    height: 100%;
+
+    background-color: gray;
+
+    display: inline-block;
+}
+
+.Past-News .News-wrap .berita article {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5vh;
+}
+
+.Past-News .News-wrap .berita article h2{
+    font-size: 1.2vw;
+}
+
+.Past-News .News-wrap .berita article p{
+    font-size: 0.9vw;
+    text-align: justify;
+    
+}
+
+.Past-News .News-wrap .berita article a{
+    font-size: 1vw;
+    font-weight: 600;
+    color: blue;
 }
 
 aside {
     flex: 1;
-    row-gap:1vh ;
+    row-gap:10vh ;
+
+    margin-top: 10vh;
     
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -327,9 +416,23 @@ aside .berita-Lainnya {
     row-gap: 1vh;
 }
 
+aside .berita-Lainnya > h2 {
+    font-size: 1.3vw;
+
+    width: 100%;
+    height: 6vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff2828;
+    color: white;
+}
+
 aside .berita-Lainnya .berita {
     width: 100%;
-    height: 10vh;
+    height: 7vh;
 
     display: flex;
     align-items: center;
@@ -348,6 +451,66 @@ aside .berita .subjudul {
     flex: 2.5;
 }
 
+aside .berita .subjudul a {
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+
+}
+
 aside .berita .subjudul a h2 {
-    font-size: 1.1vw;
+    font-size: 1vw;
+}
+
+footer {
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+
+    margin-top: 10vh;
+    background-color: rgb(54, 54, 54);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .Tentang-Kami {
+    flex: 1.5;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer hr {
+    width: 80%;
+    height: 0.2vh;
+
+    background-color: gray;
+}
+
+footer .hakcipta{
+    flex: 1;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+footer .hakcipta p {
+    width: 80%;
+    padding-top:2vh ;
+
+    font-size: 0.9vw;
+    color: white;
+}
+
+footer .hakcipta p span {
+    color: aqua;
 }
