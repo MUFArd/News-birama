@@ -13,6 +13,7 @@
         <div class="logo">
             <h1>Artikel Sekolah</h1>
         </div>
+        <label for=""><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul class="main-links">
                 <li><a href="index.html">Beranda</a></li>
@@ -64,7 +65,7 @@
                 <h1>Info Terkini</h1>
                 <span></span>
                 <span></span>
-                <h2>Penerimaan Peserta Didik Baru (PPDB) Telah Di Buka sss</h2>
+                <h2>Penerimaan Peserta Didik Baru (PPDB) Telah Di Buka </h2>
             </div>
             <img src="" alt="" srcset="">
             <article>
@@ -249,20 +250,22 @@
 <footer>
     <div class="Tentang-Kami">
         <div class="teks">
-            <h3>Kami Menyediakan Berita Seputar Sekolah</h3>
+            <h3>Jawa</h3>
         </div>
         <div class="Media-Sosial">
             <h3>Ikuti Kami</h3>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
+            <div class="links">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
         <div class="Kontak">
             <h3>Hubungi Kami</h3>
             <p>Orang 1 : <a href="">+62123456789</a></p>
             <p>Orang 2 : <a href="">+62123456789</a></p>
-            <p>Orang 3x : <a href="">+62123456789</a></p>
+            <p>Orang 3 : <a href="">+62123456789</a></p>
         </div>
     </div>
     <hr>
