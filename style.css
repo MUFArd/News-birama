@@ -150,7 +150,6 @@ header .nav-tags ul li a:hover {
   width: 70vw;
   height: auto;
   display: flex;
-  flex-direction: column;
   gap: 4vw;
 
   margin-top: 13vh;
@@ -204,7 +203,7 @@ main {
 
 .Top-News img {
   width: 100%;
-  height: 20vh;
+  height: 50vh;
 
   margin-top: 2vh;
 
@@ -534,8 +533,12 @@ nav label {
 }
 
 nav i {
+  font-family: "Font Awesome 5 Free";
   font-size: 6vw;
-  margin-right:2vw ;
+  width: 5vw;
+  height: 5vw;
+  margin-right:5vw ;
+  position: relative;
 }
 
 nav ul {
@@ -561,6 +564,16 @@ nav ul {
   transform: translateY(34.5vh);
 }
 
+#nav-header:checked ~ nav label i::after {
+  content: '\f00d';
+  width: 7vw;
+  height: 7vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: red;
+}
+
 
 nav ul li {
   width: 100%;
@@ -573,7 +586,7 @@ nav ul li {
 nav ul li a {
   width: 100%;
   height: 100%;
-  font-size: 3vw;
+  font-size: 4vw;
   justify-content: flex-start;
   padding-left: 2vw;
 
@@ -598,12 +611,10 @@ nav .pencarian input{
   width: 80%;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 1vw;
+
+  font-size: 3.5vw;
 }
-
-nav .tanggal h2 {}
-
-nav .tanggal p {}
 
 header .nav-tags {
   flex: 0.5;
@@ -620,58 +631,91 @@ header .nav-tags ul li a {
   font-size: 3vw;
 }
 
-header .nav-tags ul li a:hover {}
 
-.container {}
+.container {
+  width: 80vw;
+  margin-top: 6vh;
+  flex-direction: column;
+}
 
-main {}
+.Top-News {
+  margin-top: 5vh;
+}
 
-.Top-News {}
+.Top-News h1 {
+  font-size: 5vw;
+}
 
-.Top-News .judul {}
+.Top-News span {
+  width: 1vw;
+}
 
-.Top-News h1 {}
+.Top-News h2 {
+  font-size: 3.5vw;
+}
 
-.Top-News span {}
+.Top-News img {
+  height: 25vh;
+}
 
-.Top-News h2 {}
+.Top-News article h2 {
+  font-size: 4vw;
+}
 
-.Top-News img {}
+.Top-News article p {
+  font-size: 2.5vw;
+}
 
-.Top-News article {}
+.Past-News {
+  margin-top: 4vh;
+  overflow-x: scroll ;
+  overflow-y: hidden;
+  height: 15vh;
 
-.Top-News article h2 {}
+}
 
-.Top-News article p {}
-
-.Past-News {}
-
-.Past-News h1 {}
-
-.Past-News h1:hover {}
-
-.Past-News .News-wrap {}
-
-.Past-News .News-wrap .berita {}
-
-.Past-News .News-wrap .berita img {}
-
-.Past-News .News-wrap .berita article {}
-
-.Past-News .News-wrap .berita article h2 {}
-
-.Past-News .News-wrap .berita article p {}
-
-.Past-News .News-wrap .berita article a {}
-
-aside {
+.Past-News::-webkit-scrollbar {
   display: none;
 }
 
-aside .berita-Lainnya { 
-  display: none;}
+.Past-News h1 {
+  position: absolute;
+  font-size: 5vw;
+}
 
-aside .berita-Lainnya > h2 {}
+.Past-News .News-wrap {
+  width: 400vw;
+  height: 10vh;
+  flex-direction: row;
+  gap: 5vw;
+  padding: 1vh 0 0 0;
+  
+}
+.Past-News .News-wrap .berita {
+  margin-top: 2vh;
+  height: 13vh;
+
+}
+
+.Past-News .News-wrap .berita article h2 {
+  font-size: 2.5vw;
+}
+
+.Past-News .News-wrap .berita article p {
+  font-size: 2vw;
+}
+
+.Past-News .News-wrap .berita article a {
+  font-size: 1.5vw;
+}
+
+aside {}
+
+aside .berita-Lainnya {}
+
+aside .berita-Lainnya > h2 {
+  font-size: 3.5vw;
+}
 
 aside .berita-Lainnya .berita {}
 
@@ -683,42 +727,74 @@ aside .berita .subjudul a {}
 
 aside .berita .subjudul a h2 {}
 
-footer {}
+footer {
+  height: 65vh;
+  overflow-x: hidden;
+}
 
-footer .Tentang-Kami {}
+footer .Tentang-Kami {
+  flex-direction: column;
+}
 
-footer .Tentang-Kami div {}
+footer .Tentang-Kami div {
+  justify-content: center;
+  flex-direction: column;
 
-footer .Tentang-Kami .nav-footer {}
+}
 
-footer .Tentang-Kami .nav-footer a {}
+footer .Tentang-Kami .nav-footer {
+  width: 100vw;
+  height: 100%;
+}
 
-footer .Tentang-Kami .nav-footer a:hover {}
+footer .Tentang-Kami .nav-footer li a {
+  font-size: 3.5vw;
+}
 
-footer .Tentang-Kami .nav-footer .organisasi {}
+footer .Tentang-Kami .Media-Sosial {
+  align-items: flex-start;
+  height: 50%;
+  margin-top: 2vh;
+}
 
-footer .Tentang-Kami .nav-footer li a {}
+footer .Tentang-Kami .Media-Sosial h3 {
+  font-size: 4vw;
+  text-indent: 2vw;
+}
 
-footer .Tentang-Kami .Media-Sosial {}
+footer .Tentang-Kami .Media-Sosial .links {
+  justify-content: flex-start;
+  text-indent: 2vw;
+}
 
-footer .Tentang-Kami .Media-Sosial h3 {}
+footer .Tentang-Kami .Media-Sosial i {
+  font-size: 5vw;
+  margin-top: 3vh;
+}
 
-footer .Tentang-Kami .Media-Sosial .links {}
+footer .Tentang-Kami .Kontak {
+  height: 50%;
+  margin: 5vh 0 0 2vw;
+  align-items: flex-start;
+  gap: 1vh;
+}
 
-footer .Tentang-Kami .Media-Sosial .links a {}
+footer .Tentang-Kami .Kontak p {
+  font-size: 3vw;
+  text-indent: 2vw;
+}
 
-footer .Tentang-Kami .Kontak {}
+footer hr {
+  margin-top: 2vw;
+}
 
-footer .Tentang-Kami .Kontak p {}
+footer .hakcipta {
+  width: 90vw;
+  height: 15%;
+}
 
-footer .Tentang-Kami .Kontak p a {}
-
-footer hr {}
-
-footer .hakcipta {}
-
-footer .hakcipta p {}
-
-footer .hakcipta p span {}
-
+footer .hakcipta p {
+  width: 100%;
+  font-size: 2.5vw;
+}
 }
